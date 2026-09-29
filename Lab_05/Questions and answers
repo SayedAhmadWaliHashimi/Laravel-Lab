@@ -1,0 +1,18 @@
+Quick Understanding Questions
+
+1. In which folder do you place Blade view files?
+Answer: resources/views/
+
+2. Which file contains the routes used in this lab?
+Answer: routes/web.php
+
+3. What does return view('home') do?
+Answer: It loads the home.blade.php file from the resources/views folder, processes any Blade syntax (like {{ $course }}),
+and returns the resulting HTML as the response to the browser.
+
+4. What is the difference between the URL /about and the file about.blade.php?
+Answer:
+
+· /about is the URL (the web address the user visits in the browser).
+· about.blade.php is the actual templatefile saved on the computer's disk.
+· The route in routes/web.php connects the two: when a user visits the /about URL, Laravel loads and returns the about.blade.php file.
